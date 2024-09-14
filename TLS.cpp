@@ -2,7 +2,7 @@
 #include <cmath>
 
 using namespace std;
-float pie=3.14;
+float pi=3.14;
 
 int main()
 {
@@ -108,7 +108,7 @@ int main()
         float jarijari;
         cout << "Masukkan jari-jari lingkaran:" << endl;
         cin >> jarijari;
-        float Luas = pie*jarijari*jarijari;
+        float Luas = pi*jarijari*jarijari;
         cout << "Luas lingkaran:" << Luas << endl;
     }
     
