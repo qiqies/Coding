@@ -7,7 +7,7 @@ float pie=3.14;
 int main()
 {
     int pilihan;
-    std::cout << "      KALKULATOR LUAS BANGUN DATAR      " << std::endl
+    cout << "      KALKULATOR LUAS BANGUN DATAR      " << endl
               << "Bangun datar apa yang ingin kamu hitung?" << endl
               << "1. Persegi" << endl
               << "2. Persegi Panjang" << endl
@@ -17,103 +17,103 @@ int main()
               << "6. Trapesium" << endl
               << "7. Jajar genjang" << endl
               << "8. Lingkaran" << endl;
-    std::cin >> pilihan;
+    cin >> pilihan;
     
     if (pilihan == 1)
     {
         float sisi;
-        std::cout << "Masukkan sisi persegi:" << std::endl;
-        std::cin >> sisi;
+        cout << "Masukkan sisi persegi:" << endl;
+        cin >> sisi;
         float Luas = sisi*sisi;
-        std::cout << "Luas persegi:" << Luas << std::endl;
+        cout << "Luas persegi:" << Luas << endl;
     }
     
     if (pilihan == 2)
     {
         float panjang;
-        std::cout << "Masukkan panjang persegi panjang:" << std::endl;
-        std::cin >> panjang;
+        cout << "Masukkan panjang persegi panjang:" << endl;
+        cin >> panjang;
         float lebar;
-        std::cout << "Masukkan lebar persegi panjang:" << std::endl;
-        std::cin >> lebar;
+        cout << "Masukkan lebar persegi panjang:" << endl;
+        cin >> lebar;
         float Luas = panjang*lebar;
-        std::cout << "Luas persegi panjang:" << Luas << std::endl;
+        cout << "Luas persegi panjang:" << Luas << endl;
     }
     
     if (pilihan == 3)
     {
         float alas;
-        std::cout << "Masukkan alas segitiga:" << std::endl;
-        std::cin >> alas;
+        cout << "Masukkan alas segitiga:" << endl;
+        cin >> alas;
         float tinggi;
-        std::cout << "Masukkan tinggi segitiga:" << std::endl;
-        std::cin >> tinggi;
+        cout << "Masukkan tinggi segitiga:" << endl;
+        cin >> tinggi;
         float Luas = alas*tinggi*0.5;
-        std::cout << "Luas segitiga:" << Luas << std::endl;
+        cout << "Luas segitiga:" << Luas << endl;
     }
     
     if (pilihan == 4)
     {
         float diagonal_1;
-        std::cout << "Masukkan diagonal 1 layang-layang:" << std::endl;
-        std::cin >> diagonal_1;
+        cout << "Masukkan diagonal 1 layang-layang:" << endl;
+        cin >> diagonal_1;
         float diagonal_2;
-        std::cout << "Masukkan diagonal 2 layang-layang:" << std::endl;
-        std::cin >> diagonal_2;
+        cout << "Masukkan diagonal 2 layang-layang:" << endl;
+        cin >> diagonal_2;
         float Luas = diagonal_1*diagonal_2*0.5;
-        std::cout << "Luas layang-layang:" << Luas << std::endl;
+        cout << "Luas layang-layang:" << Luas << endl;
     }
     
      if (pilihan == 5)
     {
         float diagonal_1;
-        std::cout << "Masukkan diagonal 1 belah ketupat:" << std::endl;
-        std::cin >> diagonal_1;
+        cout << "Masukkan diagonal 1 belah ketupat:" << endl;
+        cin >> diagonal_1;
         float diagonal_2;
-        std::cout << "Masukkan diagonal 2 belah ketupat:" << std::endl;
-        std::cin >> diagonal_2;
+        cout << "Masukkan diagonal 2 belah ketupat:" << endl;
+        cin >> diagonal_2;
         float Luas = diagonal_1*diagonal_2*0.5;
-        std::cout << "Luas belah ketupat:" << Luas << std::endl;
+        cout << "Luas belah ketupat:" << Luas << endl;
     }
     
      if (pilihan == 6)
     {
         float tinggi;
-        std::cout << "Masukkan tinggi trapesium:" << std::endl;
-        std::cin >> tinggi;
+        cout << "Masukkan tinggi trapesium:" << endl;
+        cin >> tinggi;
         float sisi_atas;
-        std::cout << "Masukkan sisi atas trapesium:" << std::endl;
-        std::cin >> sisi_atas;
+        cout << "Masukkan sisi atas trapesium:" << endl;
+        cin >> sisi_atas;
         float sisi_bawah;
-        std::cout << "Masukkan sisi bawah trapesium:" << std::endl;
-        std::cin >> sisi_bawah;
+        cout << "Masukkan sisi bawah trapesium:" << endl;
+        cin >> sisi_bawah;
         float Luas = (sisi_atas+sisi_bawah)*tinggi*0.5;
-        std::cout << "Luas trapesium:" << Luas << std::endl;
+        cout << "Luas trapesium:" << Luas << endl;
     }
     
     if (pilihan == 7)
     {
         float alas;
-        std::cout << "Masukkan alas jajar genjang:" << std::endl;
-        std::cin >> alas;
+        cout << "Masukkan alas jajar genjang:" << endl;
+        cin >> alas;
         float tinggi;
-        std::cout << "Masukkan tinggi jajar genjang:" << std::endl;
-        std::cin >> tinggi;
+        cout << "Masukkan tinggi jajar genjang:" << endl;
+        cin >> tinggi;
         float Luas = alas*tinggi;
-        std::cout << "Luas jajar genjang:" << Luas << std::endl;
+        cout << "Luas jajar genjang:" << Luas << endl;
     }
     
     if (pilihan == 8)
     {
         float jarijari;
-        std::cout << "Masukkan jari-jari lingkaran:" << std::endl;
-        std::cin >> jarijari;
+        cout << "Masukkan jari-jari lingkaran:" << endl;
+        cin >> jarijari;
         float Luas = pie*jarijari*jarijari;
-        std::cout << "Luas lingkaran:" << Luas << std::endl;
+        cout << "Luas lingkaran:" << Luas << endl;
     }
     
     if (pilihan<1 || pilihan>8)
     {
-        std::cout << "Pilihan tidak falid" << std::endl;
+        cout << "Pilihan tidak falid" << endl;
     }
 }
